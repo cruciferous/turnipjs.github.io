@@ -1,0 +1,71 @@
+:root {
+  --offwhite: #Fffef9;
+  --primary: #6095b2;
+  --primary-fade: #d6f0ff;
+  --main: #ffedd6;
+  --main-fade: #fff7ed;
+}
+
+body {
+  background-color: var(--main-fade);
+}
+
+div#content {
+  background-color: var(--offwhite);
+  padding: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.75em;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p, li, button {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.3em;
+}
+
+button {
+  color: white;
+  background-color: var(--primary);
+  padding: .5em;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  border-radius: 3px;
+}
+
+button[disabled] {
+  background-color: var(--primary-fade);
+  color: darkgrey;
+}
+
+span.code {
+  background-color: var(--primary-fade);
+  border-radius: 3px;
+  border: 1px solid var(--primary);
+  font-family: Courier, monospace;
+  font-weight: 600;
+}
