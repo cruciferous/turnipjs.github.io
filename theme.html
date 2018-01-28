@@ -3,12 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>For Testing Purposes</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
+    <link rel="shortcut icon" href="eye.png">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="theme.css">
   </head>
   <body>
+    <div id="navbar">
+      <img class="logo-image" src="eye.png" alt="Charles Moonen's Eye">
+      <ul id="nav">
+        <li class="nav-item" ><a href="#">Home</a></li>
+        <li class="nav-item" ><a href="#">Resume</a></li>
+        <li class="nav-item"  active><a href="theme.html">This Theme</a></li>
+        <li class="nav-item" >About This Site</li>
+        <li class="nav-item right"><a href="#">Contact</a></li>
+      </ul>
+    </div>
     <div id="content">
+      <br>
       <h1>Header 1</h1>
       <h2>Header 2</h2>
       <h3>Header 3</h3>
@@ -22,9 +33,14 @@
 
       <button type="button" name="button">Button</button>
       <button type="button" name="button" disabled>Disabled Button</button>
+      <button type="button" name="button" urgent>Urgent Button</button>
 
       <p>This is a paragraph with some <span class="code">computer code</span>.</p>
 
+      <div class="panel">
+        <h3>Panel Heading</h3>
+        <img src="" alt="">
+      </div>
     </div>
   </body>
 </html>
