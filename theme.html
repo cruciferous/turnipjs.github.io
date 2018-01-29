@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="theme.css">
   </head>
   <body>
+
     <div id="navbar">
-      <img class="logo-image" src="eye.png" alt="Charles Moonen's Eye">
-      <ul id="nav">
-        <li class="nav-item" ><a href="#">Home</a></li>
-        <li class="nav-item" ><a href="#">Resume</a></li>
-        <li class="nav-item"  active><a href="theme.html">This Theme</a></li>
-        <li class="nav-item" >About This Site</li>
-        <li class="nav-item right"><a href="#">Contact</a></li>
-      </ul>
+      <a href="/"><img class="logo-image" src="eye.png" alt="Charles Moonen's Eye"></a>
+      <a class="nav-item" href="/">Home</a>
+      <a class="nav-item" href="/resume/">Resume</a>
+      <a class="nav-item active" href="/theme.html">This Theme</a>
+      <a class="nav-item" href="/about/">About This Site</a>
+      <a class="nav-item right" href="/contact/">Contact</a>
     </div>
+
     <div id="content">
       <br>
       <h1>Header 1</h1>
@@ -32,8 +32,8 @@
       </p>
 
       <button type="button" name="button">Button</button>
-      <button type="button" name="button" disabled>Disabled Button</button>
-      <button type="button" name="button" urgent>Urgent Button</button>
+      <button class="disabled" type="button" name="button">Disabled Button</button>
+      <button class="urgent" type="button" name="button" urgent>Urgent Button</button>
 
       <p>This is a paragraph with some <span class="code">computer code</span>.</p>
 
