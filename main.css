@@ -29,43 +29,17 @@ div {
 
 body {
   background-color: var(--main-fade);
-  font-size: 16px;
   margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
   margin: .5em 0;
   display: block;
 }
 
-h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 2.5em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-h4 {
-  font-size: 1.5em;
-}
-
-h5 {
-  font-size: 1em;
-}
-
-h6 {
-  font-size: .85em;
-}
-
 p, li, button {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3em;
 }
 
 button {
@@ -76,6 +50,10 @@ button {
   border: none;
   border-radius: .3em;
   margin: .3em;
+}
+
+button:hover:not(.disabled) {
+  cursor: pointer;
 }
 
 button:active {
@@ -100,6 +78,8 @@ span.code {
   border-radius: .2em;
   border: 1px solid var(--primary);
   font-family: "Roboto Mono", monospace;
+  padding-left: .3em;
+  padding-right: .3em;
 }
 
 div.panel {
@@ -128,21 +108,24 @@ div#navbar {
 a.nav-item {
   color: black;
   text-decoration: none;
-  font-family: 'Roboto Slab', Serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   display: block;
   float: left;
-  padding: .84375em .84375em; /* values from some ratio I did b/c I don't fully understand how the heights of text elements are calculated (but to my credit, it works) */
   margin: 0;
-  max-height: 3em;
+  height: 100%;
+  line-height: 100%;
 }
 
-a.nav-item:hover, a.nav-item.active {
+a.nav-link:hover, a.nav-link.active {
   background-color: var(--main-fade);
 }
 
-a.nav-item.right {
+a.nav-link.right {
   float: right;
+}
+
+p.nav-item{
 }
 
 img.logo-image {
