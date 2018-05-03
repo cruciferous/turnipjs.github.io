@@ -25,6 +25,15 @@
       grid-template-areas: "left right";
       grid-column-gap: 2em;
     }
+    @media only screen and (max-width: 600px)  {
+      form {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "left"
+                             "right";
+      }
+    }
 
     .left-secion {
       grid-area: left;
