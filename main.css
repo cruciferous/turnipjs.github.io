@@ -122,7 +122,7 @@ div#navbar {
   background-color: var(--main);
   margin: 0 20vw;
   padding: 0;
-  height: 3em;
+  min-height: 3em;
 }
 
 a.nav-item {
