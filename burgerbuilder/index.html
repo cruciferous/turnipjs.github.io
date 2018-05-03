@@ -118,10 +118,10 @@
       "Triple Double": ["egg", "trip", "doub", "pickle", "onion", "tomato", "lettuce", "american", "smash", "ketchup"],
       "Classic Smash": ["egg", "pickle", "onion", "tomato", "lettuce", "american", "smash", "ketchup"],
       "Bacon Avocado Club": ["grain", "tomato", "lettuce", "ranch", "mayo", "bacon", "avocado"],
-      "BBQ Bacon & Cheddar": ["egg", "bbq", "bacon", "cheddar", "hay"],
-      "Buffalo & Blue Cheese": ["egg", "buffalo", "blue", "tomato", "lettuce", "mayo"],
+      "BBQ Bacon and Cheddar": ["egg", "bbq", "bacon", "cheddar", "hay"],
+      "Buffalo and Blue Cheese": ["egg", "buffalo", "blue", "tomato", "lettuce", "mayo"],
       "Spicy Jalapeño Baja": ["spicy", "jalapeno", "guac", "jack", "lettuce", "tomato", "onion", "chipotle"],
-      "Spinach Cucumber & Goat Cheese": ["grain", "spinach", "cucumber", "goat", "tomato", "onion", "balsamic"],
+      "Spinach Cucumber and Goat Cheese": ["grain", "spinach", "cucumber", "goat", "tomato", "onion", "balsamic"],
       "Truffle Mushroom Swiss": ["egg", "swiss", "truffle", "mushroom"]
     }
 
@@ -165,6 +165,8 @@
         }
       }
 
+      console.log(itemsUsed);
+      console.log(currentBurger);
       if (arraysEqual(itemsUsed.sort(), currentBurger.sort())) {
         $(".alert").remove()
         $("body").prepend(goodBurger)
