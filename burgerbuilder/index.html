@@ -8,8 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-  <meta charset="utf-8">
+  
   <title>Charles Moonen's Burger Builder</title>
   <style media="screen">
     .alert {
@@ -70,6 +69,28 @@
 
     <form id="builder">
       <div class="left-secion">
+        <span style="font-weight: bold;">Buns:</span>
+        <br><input type="checkbox" name="egg" id="egg"><label for="egg">Egg Bun</label>
+        <br><input type="checkbox" name="grain" id="grain"><label for="grain">Multi-Grain Bun</label>
+        <br><input type="checkbox" name="spicy" id="spicy"><label for="spicy">Spicy Chipotle Bun</label>
+
+        <br><span style="font-weight: bold;">Cheese:</span>
+        <br><input type="checkbox" name="american" id="american"><label for="american">American Cheese</label>
+        <br><input type="checkbox" name="blue" id="blue"><label for="blue">Blue Cheese</label>
+        <br><input type="checkbox" name="cheddar" id="cheddar"><label for="cheddar">Cheddar Cheese</label>
+        <br><input type="checkbox" name="jack" id="jack"><label for="jack">Pepper Jack Cheese</label>
+        <br><input type="checkbox" name="goat" id="goat"><label for="goat">Goat Cheese</label>
+        <br><input type="checkbox" name="swiss" id="swiss"><label for="swiss">Swiss</label>
+
+        <br><span style="font-weight: bold;">Other Toppings:</span>
+        <br><input type="checkbox" name="bacon" id="bacon"><label for="bacon">Bacon</label>
+        <br><input type="checkbox" name="hay" id="hay"><label for="hay">Haystack Onions</label>
+        <br><input type="checkbox" name="guac" id="guac"><label for="guac">Guacamole</label>
+        <br><input type="checkbox" name="doub" id="doub"><label for="doub">Double Burgers</label>
+        <br><input type="checkbox" name="trip" id="trip"><label for="trip">Tripple Cheese</label>
+      </div>
+
+      <div class="right-section">
         <span style="font-weight: bold;">Sauces:</span>
         <br><input type="checkbox" name="smash" id="smash"><label for="smash">Smash Sauce</label>
         <br><input type="checkbox" name="ketchup" id="ketchup"><label for="ketchup">Ketchup</label>
@@ -92,33 +113,10 @@
         <br><input type="checkbox" name="jalapeno" id="jalapeno"><label for="jalapeno">Jalapeños</label>
         <br><input type="checkbox" name="avocado" id="avocado"><label for="avocado">Avocado</label>
       </div>
-
-      <div class="right-section">
-        <span style="font-weight: bold;">Buns:</span>
-        <br><input type="checkbox" name="egg" id="egg"><label for="egg">Egg Bun</label>
-        <br><input type="checkbox" name="grain" id="grain"><label for="grain">Multi-Grain Bun</label>
-        <br><input type="checkbox" name="spicy" id="spicy"><label for="spicy">Spicy Chipotle Bun</label>
-
-        <br><span style="font-weight: bold;">Cheese:</span>
-        <br><input type="checkbox" name="american" id="american"><label for="american">American Cheese</label>
-        <br><input type="checkbox" name="blue" id="blue"><label for="blue">Blue Cheese</label>
-        <br><input type="checkbox" name="cheddar" id="cheddar"><label for="cheddar">Cheddar Cheese</label>
-        <br><input type="checkbox" name="jack" id="jack"><label for="jack">Pepper Jack Cheese</label>
-        <br><input type="checkbox" name="goat" id="goat"><label for="goat">Goat Cheese</label>
-        <br><input type="checkbox" name="swiss" id="swiss"><label for="swiss">Swiss</label>
-
-        <br><span style="font-weight: bold;">Other Toppings:</span>
-        <br><input type="checkbox" name="bacon" id="bacon"><label for="bacon">Bacon</label>
-        <br><input type="checkbox" name="hay" id="hay"><label for="hay">Haystack Onions</label>
-        <br><input type="checkbox" name="guac" id="guac"><label for="guac">Guacamole</label>
-        <br><input type="checkbox" name="doub" id="doub"><label for="doub">Double Burgers</label>
-        <br><input type="checkbox" name="trip" id="trip"><label for="trip">Tripple Cheese</label>
-
-        <br><input type="button" value="Submit" onclick="checkBurger()">
-      </div>
+      <br><input type="button" value="Submit" onclick="checkBurger()">
     </form>
 
-    <p>This tool was created independently and has no affiliation with Smashburger&trade;.</p>
+    <p>This tool was created independently and has no affiliation with a certain burger company.</p>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
