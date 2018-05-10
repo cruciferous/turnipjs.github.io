@@ -30,13 +30,6 @@
         font-size: 24px;
       }
 
-      a {
-        font-family: 'Roboto', sans-serif;
-        grid-area: a;
-        max-width: 700px;
-        font-size: 24px;
-      }
-
       img {
         width: 100%;
       }
@@ -65,12 +58,11 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 1fr auto 1fr;
-        grid-template-rows: 1fr auto auto auto 1fr;
+        grid-template-rows: 1fr auto auto 1fr;
         grid-template-areas:
           ". . ."
           ". h ."
           ". p ."
-          ". a ."
           ". . ."
         ;
       }
@@ -82,7 +74,6 @@
     <div class="content">
       <h1>Coming Soon!!</h1>
       <p>Charles Moonen's Resume and Portfolio <a href="#">site</a> is under construction. Please check back soon, or view the <a href="https://github.com/turnipjs/turnipjs.github.io">GitHub repository</a> to see how it's coming along.</p>
-      <a href="burgerbuilder">Burger Builder</a>
     </div>
   </body>
 </html>
