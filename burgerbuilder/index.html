@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" crossorigin="anonymous">
   
   <title>Charles Moonen's Burger Builder</title>
   <style media="screen">
@@ -73,21 +73,25 @@
         <br><input type="checkbox" name="egg" id="egg"><label for="egg">Egg Bun</label>
         <br><input type="checkbox" name="grain" id="grain"><label for="grain">Multi-Grain Bun</label>
         <br><input type="checkbox" name="spicy" id="spicy"><label for="spicy">Spicy Chipotle Bun</label>
+        <br><input type="checkbox" name="onionBun" id="onionBun"><label for="onionBun">Onion Bun</label>
+        <br><input type="checkbox" name="pretzel" id="pretzel"><label for="pretzel">Pretzel Bun</label>
 
         <br><span style="font-weight: bold;">Cheese:</span>
-        <br><input type="checkbox" name="american" id="american"><label for="american">American Cheese</label>
+        <br><input type="checkbox" name="american" id="am0"><label for="am0">American Cheese</label>
+        <br><input type="checkbox" name="american" id="am1"><label for="am1">American Cheese</label>
+        <br><input type="checkbox" name="american" id="am2"><label for="am2">American Cheese</label>
         <br><input type="checkbox" name="blue" id="blue"><label for="blue">Blue Cheese</label>
         <br><input type="checkbox" name="cheddar" id="cheddar"><label for="cheddar">Cheddar Cheese</label>
         <br><input type="checkbox" name="jack" id="jack"><label for="jack">Pepper Jack Cheese</label>
         <br><input type="checkbox" name="goat" id="goat"><label for="goat">Goat Cheese</label>
         <br><input type="checkbox" name="swiss" id="swiss"><label for="swiss">Swiss</label>
+        <br><input type="checkbox" name="melt" id="melt"><label for="melt">Melted Aged Cheddar</label>
 
         <br><span style="font-weight: bold;">Other Toppings:</span>
         <br><input type="checkbox" name="bacon" id="bacon"><label for="bacon">Bacon</label>
         <br><input type="checkbox" name="hay" id="hay"><label for="hay">Haystack Onions</label>
         <br><input type="checkbox" name="guac" id="guac"><label for="guac">Guacamole</label>
-        <br><input type="checkbox" name="doub" id="doub"><label for="doub">Double Burgers</label>
-        <br><input type="checkbox" name="trip" id="trip"><label for="trip">Tripple Cheese</label>
+        <br><input type="checkbox" name="doub" id="doub"><label for="doub">Double Burgers (small)</label>
       </div>
 
       <div class="right-section">
@@ -97,7 +101,7 @@
         <br><input type="checkbox" name="ranch" id="ranch"><label for="ranch">Ranch Dressing</label>
         <br><input type="checkbox" name="buffalo" id="buffalo"><label for="buffalo">Frank's Red Hot Buffalo Sauce</label>
         <br><input type="checkbox" name="mayo" id="mayo"><label for="mayo">Mayo</label>
-        <br><input type="checkbox" name="chipotle" id="chipotle"><label for="chipotle">Chipotle Mayo</label>
+        <br><input type="checkbox" name="chipotle" id="chipotle"><label for="chipotle">Chipotle Dressing</label>
         <br><input type="checkbox" name="balsamic" id="balsamic"><label for="balsamic">Balsamic Vinaigrette</label>
         <br><input type="checkbox" name="truffle" id="truffle"><label for="truffle">Truffle Mayo</label>
         <br><input type="checkbox" name="bbq" id="bbq"><label for="bbq">BBQ Sauce</label>
@@ -121,17 +125,23 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-s
+  mHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script type="text/javascript">
     const BURGERS = {
-      "Triple Double": ["egg", "trip", "doub", "pickle", "onion", "tomato", "lettuce", "american", "smash", "ketchup"],
-      "Classic Smash": ["egg", "pickle", "onion", "tomato", "lettuce", "american", "smash", "ketchup"],
+      "Triple Double": ["egg", 2, "melt", "doub", "pickle", "onion", "tomato", "lettuce", "smash", "ketchup"],
+      "Bacon Triple Double": ["egg", 2, "melt", "doub", "pickle", "onion", "tomato", "lettuce", "smash", "ketchup", "bacon"],
+      "Classic Smash": ["egg", "pickle", "onion", "tomato", "lettuce", 1, "smash", "ketchup"],
       "Bacon Avocado Club": ["grain", "tomato", "lettuce", "ranch", "mayo", "bacon", "avocado"],
       "BBQ Bacon and Cheddar": ["egg", "bbq", "bacon", "cheddar", "hay"],
       "Buffalo and Blue Cheese": ["egg", "buffalo", "blue", "tomato", "lettuce", "mayo"],
       "Spicy Jalapeño Baja": ["spicy", "jalapeno", "guac", "jack", "lettuce", "tomato", "onion", "chipotle"],
       "Spinach Cucumber and Goat Cheese": ["grain", "spinach", "cucumber", "goat", "tomato", "onion", "balsamic"],
-      "Truffle Mushroom Swiss": ["egg", "swiss", "truffle", "mushroom"]
+      "Truffle Mushroom Swiss": ["egg", "swiss", "truffle", "mushroom"],
+      "Pub Triple Double": ["pretzel", 3, "grill", "spicyMust"],
+      "Twin Cities": ["onionBun", "melt", "grill", "swiss", "mayo", "lettuce", "tomato"],
+      "Sin City": [1, "grill", "friedEgg", "bacon", "hay", "smash", "egg"],
+      "Windy City": ["lettuce", "tomato", "hay", "melt", "pretzel", "spicyMust"]
     }
 
     const goodBurger = "<div class=\"alert alert-success\" role=\"alert\"><p>Success! You got the burger 100% right!</p></div>"
@@ -142,7 +152,7 @@
     var title = $("#burgerTitle");
 
     function newBurger() {
-      var target = Math.floor(Math.random() * 8);
+      var target = Math.floor(Math.random() * 12);
       var i = 0;
       for (burger in BURGERS) {
         if (i == target) {
@@ -170,7 +180,19 @@
 
       for (item of boxes) {
         if (item.checked) {
-          itemsUsed.push(item.name);
+          console.log(item.name + " -- checked");
+          if (item.name == "american") {
+            console.log(item.name + " -- american");
+            if ((typeof itemsUsed[0]) != "number"){
+              console.log(item.name + " -- unshift");
+              itemsUsed.unshift(0);
+            }
+            console.log(item.name + " -- increment");
+            itemsUsed[0]++;
+          } else {
+            console.log(item.name + " -- push");
+            itemsUsed.push(item.name);
+          }
         }
       }
 
