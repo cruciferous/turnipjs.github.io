@@ -1,3 +1,7 @@
+# painter.py
+# I condemn any use of this code anywhere without my express permission
+# This program was intended to run in python 3, functionality in python 2 is unknown.
+
 import time
 start = time.time()
 
