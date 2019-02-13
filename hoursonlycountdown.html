@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hours Only Count Down Timer</title>
+  </head>
+  <body>
+    <label for="end">End Date-Time:</label>
+    <input id="input" type="datetime" name="end" value="">
+    <button type="button" name="submit" onclick="start()">Start Timer</button>
+    <label for="minus">Minus Hours:</label>
+    <input id="number" type="number" name="minus" value="0">
+    <div id="timer">
+      <span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span> ±1 sec
+    </div>
+    <script type="text/javascript">
+      function hours(mil) {
+        return Math.floor(mil/(1000*60*60))
+      }
+      
+      function minutes(mil) {
+        return Math.floor((mil - hours(mil)*1000*60*60)/(1000*60))
+      }
+      
+      function seconds(mil) {
+        return Math.floor((mil - hours(mil)*1000*60*60 - minutes(mil)*1000*60)/1000)
+      }
+      
+      function start() {
+        console.log("start");
+        end = new Date(document.getElementById('input').value)
+        display()
+        a = setInterval(display, 1000);
+      }
+      
+      function display() {
+        console.log("display");
+        var now = new Date()
+        var diff = end - now - (document.getElementById("number").value * 1000 * 60 * 60)
+        document.getElementById('hours').innerHTML = hours(diff)
+        document.getElementById('minutes').innerHTML = Math.floor(minutes(diff))
+        document.getElementById('seconds').innerHTML = Math.floor(seconds(diff))
+      }
+      
+      var a;
+      var end;
+      console.log("script end");
+    </script>
+  </body>
+</html>
