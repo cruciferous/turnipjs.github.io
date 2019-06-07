@@ -4,18 +4,18 @@ Educated and active citizens are an essential part of any democracy. This guide 
 The first thing we need to do is to make sure we keep up to date with new information about climate change. It is a popular belief that finding the truth in the internet age is becoming more and more difficult. I am unconvinced that this is the case and attribute the opinion to good ole days syndrome. However, I do recognize that there are many news sources that intentionally deceive readers with sensationalized headlines and text to misrepresent facts among many other deceptive practices. There are plenty of good journalists out there though, [this article](https://www.forbes.com/sites/berlinschoolofcreativeleadership/2017/02/01/10-journalism-brands-where-you-will-find-real-facts-rather-than-alternative-facts/#1a6369d2e9b5) lists several good national and international news sources and the criteria used to choose them. Local newspapers are often good sources of local news as well.
 
 ### A Few Recommended News organizations: 
-<img src="ap.png" height=100 style="margin: 20px">
-<img src="atlantic.png" height=100 style="margin: 20px">
-<img src="bbc.jpg" height=100 style="margin: 20px">
-<img src="bloomberg.jpg" height=100 style="margin: 20px">
-<img src="economist.png" height=100 style="margin: 20px">
-<img src="fa.png" height=100 style="margin: 20px">
-<img src="newyorker.jpg" height=100 style="margin: 20px">
-<img src="nyt.png" height=100 style="margin: 20px">
-<img src="politico.jpg" height=100 style="margin: 20px">
-<img src="reuters.jpg" height=100 style="margin: 20px">
-<img src="wapo.jpg" height=100 style="margin: 20px">
-<img src="wsj.jpg" height=100 style="margin: 20px">
+<img src="ap.png" height="100">
+<img src="atlantic.png" height="100">
+<img src="bbc.jpg" height="100">
+<img src="bloomberg.jpg" height="100">
+<img src="economist.png" height="100">
+<img src="fa.png" height="100">
+<img src="newyorker.jpg" height="100">
+<img src="nyt.jpg" height="100">
+<img src="politico.jpg" height="100">
+<img src="reuters.jpg" height="100">
+<img src="wapo.jpg" height="100">
+<img src="wsj.jpg" height="100">
 
 ## Finding the Truth
 When looking for information, there are some things that you can look for to determine how reliable a source is.  
