@@ -44,6 +44,7 @@ While the position of POTUS certainly does lend some automatic credibility, this
 
 In conclusion, based on these two sources, it is reasonable to assume that climate change is real and caused by humans.  
 
+###### I understand that this is a silly comparison, nobody is trying to cite a tweet for their research paper. This is just for demonstration purposes.
 
 ## Finding the Right Solutions
 Now let’s examine what a proper solution to climate change may be. The first step is always to understand the problem. Using the reliable source from the previous section, we can learn more specifics about climate change and what methods would work to solve and or mitigate the issue. Then we will examine a couple different policy frameworks that the US may use in the future to work to solve the climate crisis.
