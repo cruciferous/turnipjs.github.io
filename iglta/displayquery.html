@@ -3,7 +3,10 @@
 <body>
   <div id="scont"></div>
   <script>
-    document.getElementById("scont").innerHTML = window.location.search;
+    let query = window.location.search.slice(1).split("&").map(s => s.split("="));
+    for (let pair of query) {
+      document.getElementById("scont").innerHTML += pair[0] + " = " + pair[1] + "<br/>";
+    }
   </script>
 </body>
 </html>
